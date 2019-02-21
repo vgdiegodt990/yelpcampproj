@@ -28,6 +28,8 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 
+mongoose.connect("mongodb+srv://vghd800:pienerd029@yelpcamp-ophdt.mongodb.net/test?retryWrites=true");
+
 //PASSPORT CONFIGURATION
 app.use(require("express-session")({
     secret: "Nice",
